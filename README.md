@@ -34,7 +34,7 @@ The output will be the first result that is found, together with the song name, 
 ## Build the RPM File
 (On openSUSE Tumbleweed)
 1. Install Tools "sudo zypper install rpmbuild python3-setuptools python3-devel"
-2. Clone Repository "https://github.com/DasIstTobias/lyrics-search.git"
+2. Clone Repository "https://github.com/DasIstMeow/lyrics-search.git"
 3. Move in repository "cd lyrics-search"
 4. Create Build directory "mkdir -p ~/rpmbuild/{SOURCES,SPECS,BUILD,RPMS,SRPMS}"
 5. Create Source "python setup.py sdist --formats=gztar"
@@ -50,7 +50,7 @@ The output will be the first result that is found, together with the song name, 
    Summary:        Tool to quickly gather lyrics of songs
 
    License:        GPLv3
-   URL:            https://github.com/DasIstTobias/lyrics-search
+   URL:            https://github.com/DasIstMeow/lyrics-search
    Source0:        lyrics_search-1.3.tar.gz
 
    BuildRequires:  python3-devel
@@ -80,10 +80,10 @@ The output will be the first result that is found, together with the song name, 
    %{python3_sitelib}/lyrics_search-%{version}-py*.egg-info
 
    %changelog
-   * $(LANG=C date "+%a %b %d %Y") DasIstTobias placeholder@example.com - %{version}-%{release}
+   * $(LANG=C date "+%a %b %d %Y") DasIstMeow placeholder@example.com - %{version}-%{release}
    - Update to version %{version}
 
-   * Sun May 04 2025 DasIstTobias placeholder@example.com - 0.1.0-1
+   * Sun May 04 2025 DasIstMeow placeholder@example.com - 0.1.0-1
    - Initial RPM package build.
    ```
 8. Build the RPM File "rpmbuild -ba ~/rpmbuild/SPECS/lyrics-search.spec"
