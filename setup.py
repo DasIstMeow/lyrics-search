@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name='lyrics-search',
     version='1.3',
-    author='tobias@randombytes',
+    author='meow@randombytes',
     author_email='placeholder@example.com',
     description='Tool to quickly gather lyrics of songs',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/DasIstTobias/lyrics-search',
+    url='https://github.com/DasIstMeow/lyrics-search',
     packages=find_packages(),
     install_requires=[
         # placeholder
